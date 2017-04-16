@@ -9,7 +9,7 @@ namespace CIDemo.Tests
         public void TestMethod()
         {
             // TODO: Add your test code here
-            Assert.Pass("Your first passing test");
+            Assert.Pass("Your first passing nunit test");
         }
 
         //Calculator _calculator;
