@@ -1,55 +1,56 @@
-﻿using NUnit.Framework;
+﻿using CIDemo.Models;
+using NUnit.Framework;
 
 namespace CIDemo.Tests
 {
     [TestFixture]
     public class CalculatorTests
     {
-        [Test]
-        public void TestMethod()
+        //[Test]
+        //public void TestMethod()
+        //{
+        //    // TODO: Add your test code here
+        //    Assert.Pass("Your first passing test");
+        //}
+
+        Calculator _calculator;
+
+        [OneTimeSetUp]
+        public void TestSetup()
         {
-            // TODO: Add your test code here
-            Assert.Pass("Your first passing nunit test");
+            //Assemble
+            _calculator = new Calculator();
         }
 
-        //Calculator _calculator;
+        [Test]
+        public void ShouldAddTwoNumbers()
+        {
+            //Expected 
+            var expectedResult = 15;
 
-        //[OneTimeSetUp]
-        //public void TestSetup()
-        //{
-        //    //Assemble
-        //    _calculator = new Calculator();
-        //}
+            //Actual
+            var actualResult = _calculator.Add(7, 8);
 
-        //[Test]
-        //public void ShouldAddTwoNumbers()
-        //{
-        //    //Expected 
-        //    var expectedResult = 15;
+            Assert.That(expectedResult, Is.EqualTo(actualResult));
+        }
 
-        //    //Actual
-        //    var actualResult = _calculator.Add(7, 8);
+        [Test]
+        public void ShouldMulTwoNumbers()
+        {
+            //Expected 
+            var expectedResult = 56;
 
-        //    Assert.That(expectedResult, Is.EqualTo(actualResult));
-        //}
+            //Actual
+            var actualResult = _calculator.Mul(7, 8);
 
-        //[Test]
-        //public void ShouldMulTwoNumbers()
-        //{
-        //    //Expected 
-        //    var expectedResult = 56;
+            Assert.That(expectedResult, Is.EqualTo(actualResult));
+        }
 
-        //    //Actual
-        //    var actualResult = _calculator.Mul(7, 8);
-
-        //    Assert.That(expectedResult, Is.EqualTo(actualResult));
-        //}
-
-        //[OneTimeTearDown]
-        //public void TestTearDown()
-        //{
-        //    //disassemble
-        //    _calculator = null;
-        //}
+        [OneTimeTearDown]
+        public void TestTearDown()
+        {
+            //disassemble
+            _calculator = null;
+        }
     }
 }
