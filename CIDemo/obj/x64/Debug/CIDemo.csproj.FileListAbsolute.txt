@@ -71,5 +71,6 @@ C:\Projects\CIDemo\CIDemo\bin\Debug\System.Web.Razor.xml
 C:\Projects\CIDemo\CIDemo\bin\Debug\System.Web.WebPages.xml
 C:\Projects\CIDemo\CIDemo\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Projects\CIDemo\CIDemo\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Projects\CIDemo\CIDemo\obj\x64\Debug\CIDemo.csprojResolveAssemblyReference.cache
 C:\Projects\CIDemo\CIDemo\obj\x64\Debug\CIDemo.dll
 C:\Projects\CIDemo\CIDemo\obj\x64\Debug\CIDemo.pdb
